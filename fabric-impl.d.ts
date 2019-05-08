@@ -3017,8 +3017,6 @@ export class Object {
   constructor(options?: IObjectOptions);
   initialize(options?: IObjectOptions): Object;
 
-  isEditing: boolean;
-
   /* Sets object's properties from options
    * @param {Object} [options] Options object
    */
