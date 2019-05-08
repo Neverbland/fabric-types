@@ -2504,7 +2504,13 @@ interface IObjectOptions {
    * Note that this property is meant to be read-only and not meant to be modified.
    * If you modify, certain parts of Fabric (such as JSON loading) won't work correctly.
    */
-  type?: string;
+	type?: string;
+	
+	/**
+   * Indicates whether an object is in editing mode
+   * @type Boolean
+   */
+  isEditing?: boolean;
 
   /**
    * Horizontal origin of transformation of an object (one of "left", "right", "center")
@@ -4388,11 +4394,6 @@ interface ITextOptions extends TextOptions {
    * @type Boolean
    */
   selected?: boolean;
-  /**
-   * Indicates whether text is in editing mode
-   * @type Boolean
-   */
-  isEditing?: boolean;
   /**
    * Indicates whether a text can be edited
    * @type Boolean
